@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import './Images.css';
+import Image from '../Image/Image';
 import work1 from '../../img/work-1.jpg';
 import work2 from '../../img/work-2.jpg';
 import work3 from '../../img/work-3.jpg';
@@ -14,85 +15,14 @@ export default class Images extends Component {
     render() {
 		return (
             <div className="imgFlex" id="works">
-                <div className="imgContainer">
-                    <a href=""><img src={work1} alt="" className="imgWork" /></a>
-                    <div className="overlay">
-                        <div className="text">
-                            <h5>Project Name</h5>
-                            <p>Website Design</p>
-                        </div>
-                    </div>
-                </div>
-        
-                <div className="imgContainer">
-                    <a href=""><img src={work2} alt="" className="imgWork" /></a>
-                    <div className="overlay">
-                        <div className="text">
-                            <h5>Project Name</h5>
-                            <p>Website Design</p>
-                        </div>
-                    </div>
-                </div>
-        
-                <div className="imgContainer">
-                    <a href=""><img src={work3} alt="" className="imgWork" /></a>
-                    <div className="overlay">
-                        <div className="text">
-                            <h5>Project Name</h5>
-                            <p>Website Design</p>
-                        </div>
-                    </div>
-                </div>
-        
-                <div className="imgContainer">
-                    <a href=""><img src={work4} alt="" className="imgWork" /></a>
-                    <div className="overlay">
-                        <div className="text">
-                            <h5>Prject Name</h5>
-                            <p>Website Design</p>
-                        </div>
-                    </div>
-                </div>
-        
-                <div className="imgContainer">
-                    <a href=""><img src={work5} alt="" className="imgWork" /></a>
-                    <div className="overlay">
-                        <div className="text">
-                            <h5>Prject Name</h5>
-                            <p>Website Design</p>
-                        </div>
-                    </div>
-                </div>
-            
-                <div className="imgContainer">
-                    <a href=""><img src={work6} alt="" className="imgWork" /></a>
-                    <div className="overlay">
-                        <div className="text">
-                            <h5>Prject Name</h5>
-                            <p>Website Design</p>
-                        </div>
-                    </div>
-                </div>
-            
-                <div className="imgContainer">
-                    <a href=""><img src={work7} alt="" className="imgWork" /></a>
-                    <div className="overlay">
-                        <div className="text">
-                            <h5>Prject Name</h5>
-                            <p>Website Design</p>
-                        </div>
-                    </div>
-                </div>
-            
-                <div className="imgContainer">
-                    <a href=""><img src={work8} alt="" className="imgWork" /></a>
-                    <div className="overlay">
-                        <div className="text">
-                            <h5>Prject Name</h5>
-                            <p>Website Design</p>
-                        </div>
-                    </div>
-                </div>
+                <Image img={work1} title={"Project Name"} text={"Website Design"} />
+                <Image img={work2} title={"Project Name"} text={"Website Design"} />
+                <Image img={work3} title={"Project Name"} text={"Website Design"} />
+                <Image img={work4} title={"Project Name"} text={"Website Design"} />
+                <Image img={work5} title={"Project Name"} text={"Website Design"} />
+                <Image img={work6} title={"Project Name"} text={"Website Design"} />
+                <Image img={work7} title={"Project Name"} text={"Website Design"} />
+                <Image img={work8} title={"Project Name"} text={"Website Design"} />
             </div>
 		);
 	}
