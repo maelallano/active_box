@@ -5,7 +5,7 @@ export default class Download extends Component {
 
     render() {
 		return (
-            <div className="downContainer">
+            <div className="downContainer" id="download">
                 <div className="downloadTitle">
                     <h3>Are You Ready to Start? Download Now For Free!</h3>
                 </div>

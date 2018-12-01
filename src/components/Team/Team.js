@@ -9,7 +9,7 @@ export default class Team extends Component {
 
     render() {
 		return (
-            <div className="teamContainer">
+            <div className="teamContainer" id="team">
                 <div className="team">
                     <div>
                         <img src={team1} alt="" className="teamImg" />

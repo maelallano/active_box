@@ -11,7 +11,7 @@ export default class Icons extends Component {
 
     render() {
 		return (
-            <div className="iconContainer">
+            <div className="iconContainer" id="features">
                 <div className="logoImg">
                     <div className="img">
                         <img className="iconscale" src={tools} alt="" />

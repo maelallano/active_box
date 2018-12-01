@@ -15,6 +15,12 @@ export default class Header extends Component {
         })
     }
 
+    closeBgMenu = () => {
+        this.setState({
+            bgMenu: 0,
+        })
+    }
+
     render() {
         const bgMenu = this.state.bgMenu ? "nav-list closeBurger" : "nav-list";
 
@@ -28,11 +34,11 @@ export default class Header extends Component {
             
                     <div className={bgMenu}>
                         <ul>
-                            <a href="" className="listItem"><li className="list">features</li></a>
-                            <a href="" className="listItem"><li className="list">works</li></a>
-                            <a href="" className="listItem"><li className="list">our team</li></a>
-                            <a href="" className="listItem"><li className="list">testimonials</li></a>
-                            <a href="" className="listItem"><li className="list">download</li></a>
+                            <a href="#features" className="listItem" onClick={this.closeBgMenu}><li className="list">features</li></a>
+                            <a href="#works" className="listItem" onClick={this.closeBgMenu}><li className="list">works</li></a>
+                            <a href="#team" className="listItem" onClick={this.closeBgMenu}><li className="list">our team</li></a>
+                            <a href="#testimonial" className="listItem" onClick={this.closeBgMenu}><li className="list">testimonials</li></a>
+                            <a href="#download" className="listItem" onClick={this.closeBgMenu}><li className="list">download</li></a>
                         </ul>
                     </div>
                 </div>

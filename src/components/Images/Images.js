@@ -13,7 +13,7 @@ export default class Images extends Component {
 
     render() {
 		return (
-            <div className="imgFlex">
+            <div className="imgFlex" id="works">
                 <div className="imgContainer">
                     <a href=""><img src={work1} alt="" className="imgWork" /></a>
                     <div className="overlay">
