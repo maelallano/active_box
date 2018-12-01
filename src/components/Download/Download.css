@@ -1,0 +1,50 @@
+.downContainer {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.downloadTitle {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #2d3033;
+    margin-top: 5rem;
+}
+.downloadSubTitle {
+    font-size: 1.2rem;
+    color: #2d3033;
+    margin-top: 2rem;
+}
+.downloadBtnBox {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+.downloatBtn {
+    color: #fff;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    padding: 2rem 3rem;
+    background: #e84545;
+}
+
+/* ---- Media queries ---- */
+@media (min-width: 2560px) {
+    .downContainer{
+        margin-top: 20rem;
+    }
+    .downloadTitle {
+        font-size: 5rem;
+    }
+    .downloadSubTitle {
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+    .downloadBtnBox {
+        margin-top: 8rem;
+        margin-bottom: 15rem;
+    }
+    .downloatBtn {
+        color: #fff;
+        font-size: 2.5rem;
+    }
+}
