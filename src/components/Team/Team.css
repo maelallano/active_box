@@ -5,6 +5,7 @@
 }
 .teamImg {
     margin-left: 50%;
+    margin-right: -50%;
     transform: translateX(-50%);
 }
 .teamTitle {

@@ -4,6 +4,9 @@ import Header from '../Header/Header';
 import Icons from '../Icons/Icons';
 import Images from '../Images/Images';
 import Team from '../Team/Team';
+import Testimonial from '../Testimonial/Testimonial';
+import Download from '../Download/Download';
+import Footer from '../Footer/Footer';
 
 class App extends Component {
   render() {
@@ -13,6 +16,9 @@ class App extends Component {
         <Icons />
         <Images />
         <Team />
+        <Testimonial />
+        <Download />
+        <Footer />
       </div>
     );
   }
