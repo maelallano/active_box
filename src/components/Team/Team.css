@@ -1,0 +1,90 @@
+.teamContainer {
+    padding-top: 5rem;
+    width: 50%;
+    margin: 0 auto;
+}
+.teamImg {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.teamTitle {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #2d3033;
+    margin-top: 2.5rem;
+}
+.teamRole {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #e84545;
+    margin-top: 1rem;
+}
+.teamP {
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #6c7279;
+    margin-top: 2rem;
+}
+.teamIcons {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+.tIcons {
+    border: 1px solid #e8ecee;
+    color: #c6cacc;
+    padding: 1.2rem;
+}
+
+/* ---- Media queries ---- */
+@media (min-width: 768px) {
+    .teamContainer {
+        padding-top: 5rem;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .team {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+    .teamP {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+}
+@media (min-width: 1200px) {
+    .teamContainer {
+         margin-top: 10rem;
+    }
+    .team {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1rem;
+    }
+}
+@media (min-width: 2560px) {
+    .teamContainer {
+         width: 80%;
+    }
+    .teamTitle {
+          font-size: 2.8rem;
+    }
+    .teamRole {
+        font-size: 1.6rem;
+    }
+    .teamP {
+        font-size: 1.6rem;
+    }
+    .teamIcons {
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+    }
+    .tIcons {
+        padding: 1.2rem;
+    }
+}
