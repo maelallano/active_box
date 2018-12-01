@@ -1,0 +1,209 @@
+.header {
+    background: url(../../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 25rem;
+    padding-top: 10rem;
+    position: relative;
+}
+.logo {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background: rgba(47, 49, 73, 0.8);
+    width: 100vw;
+    padding: 3rem 0;
+    z-index: 9000;
+}
+.logo-title {
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding: 1.5rem;
+    text-transform: uppercase;
+    margin-left: 2rem;
+}
+.grey-text {
+    color: grey;
+}
+.burger {
+    width: 4rem;
+    height: 4rem;
+    background: #e84545;
+    border-radius: 100%;
+    z-index: 9998;
+}
+.burgerPosition {
+    position: fixed;
+    top: 3rem;
+    right: 0;
+    right: 10rem;
+}
+.burger-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2rem;
+    height: 0.3rem;
+    background: #fff;
+    z-index: 9999;
+}
+.burger-menu::before {
+    content: "";
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2rem;
+    height: 0.3rem;
+    background: #fff;
+    z-index: 9999;
+}
+.burger-menu::after {
+    content: "";
+    position: absolute;
+    top: 220%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2rem;
+    height: 0.3rem;
+    background: #fff;
+    z-index: 9999;
+}
+.nav-list {
+    position: fixed;
+    display: none;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    z-index: 9001;
+    top: 0;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 100%;
+    padding-top: 50%;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+}
+.closeBurger {
+    display: inline;
+}
+.list {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 2.4rem;
+    line-height: 2;
+}
+.title-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 15rem;
+}
+.head-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #fff;
+    font-family: "Open Sans" sans-serif;
+    text-transform: uppercase;
+}
+.title-paragraphe {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #fff;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+.btn-background {
+}
+.btn-red {
+    margin-top: 2rem;
+    background: #e84545;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1.5rem;
+}
+
+/* ---- Media queries ---- */
+@media (orientation: landscape) {
+    .nav-list {
+      padding-top: 10%;
+    }
+    .logo {
+      padding: 1.5rem 0;
+    }
+}
+@media (min-width: 1024px) and (orientation: landscape) {
+    .nav-list {
+        padding-top: 25%;
+    }
+}
+@media (min-width: 1024px) and (orientation: landscape) {
+    .nav-list {
+        padding-top: 25%;
+    }
+    .logo-title {
+        margin-left: 20rem;
+    }
+}
+@media (min-width: 1200px) {
+    .burger {
+        display: none;
+    }
+    .logo-title {
+        margin-left: 10rem;
+    }
+    .nav-list {
+        display: inline;
+        background: none;
+        position: static;
+        padding: 0;
+        margin: 0;
+        transform: none;
+        text-align: left;
+        margin-right: 10rem;
+    }
+    .listItem{
+        display: inline-block;
+        margin-right: 2rem;
+        margin-top: 1.5rem;
+    }
+    .list {
+        font-size: 1.4rem;
+    }
+}
+@media (min-width: 2560px) {
+    .header {
+        padding-bottom: 30rem;
+        padding-top: 40rem;
+    }
+    .logo {
+        padding: 6rem 0;
+    }
+    .logo-title {
+        font-size: 4rem;
+        margin-left: 15rem;
+    }
+    .list {
+        font-size: 3rem;
+    }
+    .title-container {
+        margin-top: 10rem;
+    }
+    .head-title {
+        font-size: 7rem;
+    }
+    .title-paragraphe {
+        font-size: 3rem;
+    }
+    .btn-background {
+        margin-top: 15rem;
+    }
+    .btn-red {
+        font-size: 3rem;
+        padding: 2rem;
+    }
+}
