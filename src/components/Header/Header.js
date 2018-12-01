@@ -2,17 +2,31 @@ import React, {Component} from "react";
 import './Header.css';
 
 export default class Header extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            bgMenu: 0,
+        };
+    }
+
+    toggleBgMenu = () => {
+        this.setState({
+            bgMenu: !this.state.bgMenu,
+        })
+    }
 
     render() {
+        const bgMenu = this.state.bgMenu ? "nav-list closeBurger" : "nav-list";
+
 		return (
             <header className="header">
                 <div className="logo">
                     <a href="#" className="logo-title"><span className="grey-text">Active</span>Box</a>
-                    <div className="burger burgerPosition">
+                    <div className="burger burgerPosition" onClick={this.toggleBgMenu}>
                         <span className="burger-menu"></span>
                     </div>
             
-                    <div className="nav-list">
+                    <div className={bgMenu}>
                         <ul>
                             <a href="" className="listItem"><li className="list">features</li></a>
                             <a href="" className="listItem"><li className="list">works</li></a>

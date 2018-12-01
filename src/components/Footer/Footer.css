@@ -7,6 +7,10 @@
 .infoFlex {
     width: 90%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 .locationTitle {
     font-size: 2.4rem;
@@ -70,6 +74,14 @@
 }
   
 /* ---- Media queries ---- */
+@media (min-width: 1024px) {
+    .infoFlex {
+        flex-direction: row;
+    }
+    .infoFlex div {
+        width: 33%;
+    }
+}
 @media (min-width: 1200px) {
     .footerContainer {
         margin-top: 10rem;
