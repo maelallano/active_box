@@ -1,0 +1,52 @@
+.boxContainer {
+    background: #53354a;
+    padding-bottom: 5rem;
+    width: 100%;
+}
+.boxImg {
+    width: 100%;
+}
+.box {
+    width: 90%;
+    margin: 0 auto;
+}
+.testimonialTitle {
+    font-size: 2.4rem;
+    color: #fff;
+    font: italic "Cardo", Georgia, "Times New Roman", serif;
+    line-height: 1.5;
+    margin: 1rem 0;
+}
+.testimonialP {
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* ---- Media queries ---- */
+@media (min-width: 1200px) {
+    .boxContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 0;
+        margin: 10rem 0;
+    }
+    .box {
+        width: 70%;
+    }
+    .testimonialTitle {
+        margin-top: 30%;
+        transform: translateY(-50%);
+    }
+    .testimonialP {
+        margin-top: -5%;
+    }
+}
+@media (min-width: 2560px) {
+    .testimonialTitle {
+         font-size: 4rem;
+    }
+    .testimonialP {
+        font-size: 2rem;
+        margin-top: -5%;
+    }
+}
